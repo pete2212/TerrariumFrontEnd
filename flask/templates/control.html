@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        </script>
+
+        <script type="text/javascript">
+        </script>
+        <title>{{ title }}</title> 
+    </head>
+
+    <body>
+    <h1> test </h1>
+        {{ data.outlet }}
+    <h2> Graphical display </h2>
+    {% for out in data.outlet %}
+        {{ out }}
+        {% set outer_loop = loop %}
+        {% for info in {{ outler_loop }}.{{out}} }
+            {{ info }} 
+        {% endfor %}
+   {% endfor %}
+    </body>
+</html>
