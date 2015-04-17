@@ -36,4 +36,4 @@ def datetimefilter(value, format='%m/%d %H:%M'):
 app.jinja_env.filters['datetimefilter'] = datetimefilter
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=85, debug=True)
+    app.run()
